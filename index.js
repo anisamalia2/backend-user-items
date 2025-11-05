@@ -4,6 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import authRoutes from "./src/routes/authRoutes.js";
 import userRoutes from "./src/routes/userRoutes.js";
+import itemRoutes from "./src/routes/itemRoutes.js";
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.use(helmet());
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/items", itemRoutes);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Server running ...");
