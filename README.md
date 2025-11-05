@@ -72,7 +72,7 @@ app.use("/api/items", itemRoutes);
 ### 1. Clone Repo
 
 ```bash
-git clone https://github.com/USERNAME/backend-user-items.git
+git clone https://github.com/anisamalia2/backend-user-items.git
 cd backend-user-items-api
 ```
 
